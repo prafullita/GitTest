@@ -1,0 +1,216 @@
+nav .navbar-nav li a {
+  color: white !important;
+}
+
+.nav1 {
+  /* color:black !important; */
+  background-color: #4782b5;
+}
+
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: rgb(1, 14, 71);
+  height: 3px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: ".";
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+.footer {
+  /* background-image:url("./components/images/footer-bg.jpg"); */
+  background: #130a4bd1;
+  color: black;
+}
+
+.iconColor {
+  color: red;
+}
+
+.linkColor {
+  color: white;
+}
+.marginRt {
+  margin-right: 5px;
+}
+.navLinkCss {
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+#nav li:hover {
+  border-bottom: 2px solid white;
+}
+
+.studentImage {
+  height: 50px;
+  width: 50px;
+}
+
+.customCard{
+  background-color: #0089ff30;
+
+}
+
+.imgCard{
+  width:300px;
+  background-color: #76cefa56;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.backG{
+  background-color: rgba(35, 125, 223, 0.705);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+nav .navbar-nav li a{
+  color: black !important;
+  }
+  
+nav {
+
+margin: 0 auto;
+background: #fff;
+padding: 50px 0;
+box-shadow: 0px 5px 0px #dedede;
+}
+nav ul {
+list-style: none;
+text-align: center;
+}
+nav ul li {
+display: inline-block;
+}
+nav ul li a {
+display: block;
+padding: 15px;
+text-decoration: none;
+color: #aaa;
+font-weight: 800;
+text-transform: uppercase;
+margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+transition: all .5s;
+}
+nav ul li a:hover {
+color: rgb(2, 139, 59);
+}
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+width: 0%;
+content: '.';
+color: transparent;
+background: rgb(1, 14, 71);
+height: 3px;
+}
+nav.stroke ul li a:hover:after {
+width: 100%;
+}
+
+nav.fill ul li a {
+transition: all 2s;
+}
+
+nav.fill ul li a:after {
+text-align: left;
+content: '.';
+margin: 0;
+opacity: 0;
+}
+nav.fill ul li a:hover {
+color: #fff;
+z-index: 1;
+}
+nav.fill ul li a:hover:after {
+z-index: -10;
+animation: fill 1s forwards;
+-webkit-animation: fill 1s forwards;
+-moz-animation: fill 1s forwards;
+opacity: 1;
+}
+
+
+.footer{
+  background: #152F4F;
+  color:white;
+}

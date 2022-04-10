@@ -1,0 +1,456 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.badge-box{
+  position:absolute; 
+  top:-20px; left:50%; width:100px; height:100px;margin-left:-50px; text-align:center;
+}
+h1 {
+  color: #ffffff;
+  /* font-family: arial, sans-serif; */
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 1px;
+  /* background-color:#152F4F; */
+  background-color: #0d2c53;
+  box-shadow:2px 2px 20px rgba(0,0,0,0.3); border:none; margin-bottom:30px;
+  text-align: center;
+  font-display:inherit ;
+  font-family: "Times New Roman", Times, serif;
+  }
+  .custom {
+    /* width: 100%; */
+    border: 5px solid whitesmoke;
+    border-radius: 20px;
+    height: 290px;
+    width: 290px;
+  }
+
+.nav1{
+  color:#ffffff;
+  background-color:#152F4F;
+}
+
+a{
+  color: #61dafb;
+  text-decoration: solid;
+}
+.content{
+  color: #ffffff;
+}
+
+.footer{
+  background-image:url("./components/images/22.jpg");
+  height: 100%; 
+width: 100%;
+  /* Center and scale the image nicely */
+  background-repeat: no-repeat;
+  /* background: #1c244b; */
+  color: white;
+  background-size: cover;
+}
+
+
+.iconColor{
+  color: red;
+}
+
+.linkColor{
+  color: white;
+}
+.marginRt{
+  margin-right: 5px;
+}
+.navLinkCss{
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+#nav li:hover {
+  border-bottom:2px solid white; 
+}
+.container {
+  position: relative;
+  max-width: 800px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+.container .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 91%; /* Full width */
+  padding: 20px; /* Some padding */
+  text-align: center;
+}
+
+
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+nav .navbar-nav li a{
+  color: white !important;
+  }
+
+  .nav1{
+    color:#ffffff;
+    /* background-color:#38154b; */
+    background-color: #0c1293bf;
+  }
+
+  nav.stroke ul li a:after,
+nav.fill ul li a:after {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+width: 0%;
+content: '.';
+color: transparent;
+background: rgb(1, 14, 71);
+height: 3px;
+}
+nav.stroke ul li a:hover:after {
+width: 100%;
+}
+
+nav.fill ul li a {
+transition: all 2s;
+}
+
+
+nav.fill ul li a:hover {
+color: #fff;
+z-index: 1;
+}
+
+.place{
+  color: #ffffff;
+  font-family: arial, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 1px;
+  /* background-color:#152F4F; */
+  background-color: #0d2c53;
+  box-shadow:5px 5px 25px rgba(0,0,0,0.3); border:#61dafb; 
+  text-align: center;
+  font-display:inherit ;
+
+}
+
+  
+nav {
+
+margin: 0 auto;
+background: #fff;
+padding: 50px 0;
+box-shadow: 0px 5px 0px #dedede;
+}
+nav ul {
+list-style: none;
+text-align: center;
+}
+nav ul li {
+display: inline-block;
+}
+nav ul li a {
+display: block;
+padding: 15px;
+text-decoration: none;
+color: #aaa;
+font-weight: 800;
+text-transform: uppercase;
+margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+transition: all .5s;
+}
+nav ul li a:hover {
+color: rgb(2, 139, 59);
+}
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+width: 0%;
+content: '.';
+color: transparent;
+background: rgb(1, 14, 71);
+height: 3px;
+}
+nav.stroke ul li a:hover:after {
+width: 100%;
+}
+
+nav.fill ul li a {
+transition: all 2s;
+}
+
+nav.fill ul li a:after {
+text-align: left;
+content: '.';
+margin: 0;
+opacity: 0;
+}
+nav.fill ul li a:hover {
+color: #fff;
+z-index: 1;
+}
+nav.fill ul li a:hover:after {
+z-index: -10;
+animation: fill 1s forwards;
+-webkit-animation: fill 1s forwards;
+-moz-animation: fill 1s forwards;
+opacity: 1;
+}
+
+.placement
+{
+  size: 10px;
+  height: auto;
+  width:auto;
+}
+.back
+{
+  background-image:url("./components/images/placement.jpg") ;
+  height: 500px; 
+  width: 1500px;
+    /* Center and scale the image nicely */
+    background-repeat: no-repeat;
+  
+    /* /* color: white;
+    background-size: cover; */
+}
+.sizes{
+  size: 50px;
+}
+.imgs{
+  border-radius: 90%;
+}
+.cards{
+  box-shadow:2px 2px 20px rgba(0,0,0,0.2); border:none; margin-bottom:30px;
+}
+.cardss{
+  box-shadow:2px 2px 20px rgba(0,0,0,0.8); border:none; margin-bottom:30px;
+}
+.cards:hover{
+  transform: scale(1.05);
+  transition: all 1s ease;
+  z-index: 999;
+}
+.cardheight{
+  height:300px; overflow:hidden;
+}
+.img-size{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+  margin-left: 100px;
+}
+.btn-default{
+  display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+ 
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+
+  background-color:#006EFF;; width: 100%; color:rgb(0, 0, 0); font-weight:700; text-shadow:1px 1px 0 rgba(0, 0, 0, 0.2); font-size:14px;
+}
+.App {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+.App {
+  padding: 20px;
+  text-align: center;
+  background-color: #2c5cc3;
+  color: white;
+  text-decoration:wavy;
+  
+}
+.flip-card {
+  background-color: transparent;
+  width: 350px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: visible; /* Safari */
+  backface-visibility: hidden;
+  background-color: #2c5cc3;
+  border-radius: 5%;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #2c5cc3;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.center{
+  text-align: center;
+  border: #61dafb;
+  font-weight: bold;
+  }
+  .leaflet-container{
+    width: 80vw;
+    height: 65vh;
+  }
+.App {
+  padding: -10px;
+  text-align: center;
+  background-color: #6e7fa4;
+  color: white;
+}
+
+.instituteName{
+  margin-left: 192px;
+  margin-top: -50px;
+}
+
+.instituteLogo{
+  margin-left: 68px;
+}
+
+.instituteNameDiv{
+  border: 2px solid black;
+    padding: 5px 5px 5px 125px;
+    height:60px;
+}
+
+.nameHeading{
+  margin-bottom: -25px;
+    background-color: #b3cae226;
+}
